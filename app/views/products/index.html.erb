@@ -1,13 +1,13 @@
 <%= link_to "English", products_path(lang: 'en') %>
 <%= link_to "Turkish", products_path(lang: 'tr') %>
 <%= link_to "German", products_path(lang: 'de') %>
-<h1><%= t('attributes.product.product_list') %></h1>
+<h1><%= t('activerecord.attributes.product.product_list') %></h1>
 
 <table>
   <tr>
-    <th><%= t('attributes.product.name') %></th>
-    <th><%= t('attributes.product.quantity') %></th>
-    <th><%= t('attributes.product.description') %></th>
+    <th><%= t('activerecord.attributes.product.name') %></th>
+    <th><%= t('activerecord.attributes.product.quantity') %></th>
+    <th><%= t('activerecord.attributes.product.description') %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,9 +18,9 @@
     <td><%= product.name %></td>
     <td><%= product.quantity %></td>
     <td><%= product.description %></td>
-    <td><%= link_to t('attributes.product.show_product'), product %></td>
-    <td><%= link_to t('attributes.product.edit_product'), edit_product_path(product) %></td>
-    <td><%= link_to t('attributes.product.destroy_product'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to t('activerecord.attributes.product.show_product'), product %></td>
+    <td><%= link_to t('activerecord.attributes.product.edit_product'), edit_product_path(product) %></td>
+    <td><%= link_to t('activerecord.attributes.product.destroy_product'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
