@@ -1,0 +1,30 @@
+<%= link_to "English", products_path(lang: 'en') %>
+<%= link_to "Turkish", products_path(lang: 'tr') %>
+<%= link_to "German", products_path(lang: 'de') %>
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th><%= t('attributes.product.name') %></th>
+    <th><%= t('attributes.product.quantity') %></th>
+    <th><%= t('attributes.product.description') %></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= product.quantity %></td>
+    <td><%= product.description %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>
