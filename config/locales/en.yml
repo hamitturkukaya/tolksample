@@ -3,15 +3,3 @@
 
 en:
   hello: "Hello world"
-  models:
-    product: Product
-  attributes:
-    product:
-      name: Name
-      quantity: Quantity
-      description: Description
-      product_list: Product List
-      new_product: New Product
-      edit_product: Edit Product
-      destroy_product: Destroy Product
-      show_product: Show Product
