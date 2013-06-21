@@ -24,7 +24,7 @@ gem 'jquery-rails'
 
 gem 'i18n'
 gem 'rails-i18n'
-gem 'tolk'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

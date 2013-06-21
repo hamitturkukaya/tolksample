@@ -1,7 +1,7 @@
 <%= link_to "English", products_path(lang: 'en') %>
 <%= link_to "Turkish", products_path(lang: 'tr') %>
 <%= link_to "German", products_path(lang: 'de') %>
-<h1>Listing products</h1>
+<h1><%= t('attributes.product.product_list') %></h1>
 
 <table>
   <tr>
@@ -18,9 +18,9 @@
     <td><%= product.name %></td>
     <td><%= product.quantity %></td>
     <td><%= product.description %></td>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to t('attributes.product.show_product'), product %></td>
+    <td><%= link_to t('attributes.product.edit_product'), edit_product_path(product) %></td>
+    <td><%= link_to t('attributes.product.destroy_product'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
