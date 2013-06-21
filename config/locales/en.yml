@@ -10,3 +10,4 @@ en:
         new_product: New Product
         show_product: Show Product
         destroy_product: Delete Product
+        product_list: Product List
